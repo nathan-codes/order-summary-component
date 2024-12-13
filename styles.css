@@ -1,0 +1,170 @@
+CSS RESET
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  font-family: "Red Hat Display", serif;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  width: fit-content;
+  background: transparent;
+  border: none;
+}
+
+/* Custom styles */
+
+body {
+  background-image: url("./images/pattern-background-desktop.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: hsl(225, 100%, 98%);
+  background-size: contain;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 140%;
+  color: hsl(224, 23%, 55%);
+}
+main {
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+header {
+  /* height: 200px; */
+  width: 100%;
+}
+.music-img {
+  margin-right: 15px;
+}
+.pricing {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+button.changeButton {
+  margin-left: auto;
+  color: hsl(245, 75%, 52%);
+  font-weight: 800;
+  font-size: 14px;
+}
+button.proceed {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 8px;
+  font-weight: 700;
+  padding: 8px 0px;
+}
+
+button.cancel {
+  font-size: 14px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+article {
+  background-color: white;
+  padding: 30px;
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+@media screen and (max-width:375px) {
+    body {
+        background-image: none;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
